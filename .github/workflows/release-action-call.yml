@@ -10,10 +10,11 @@ permissions:
 jobs:
   Release-solution-ALMLab:
     uses: ./.github/workflows/release-solution-to-prod-with-inputs.yml
+    
     with:
       solution_name: Enterprise
-      BUILD_ENVIRONMENT_URL: 'https://org09ae5e87.crm.dynamics.com/'                                                  '
-      PRODUCTION_ENVIRONMENT_URL: 'https://org60cad973.crm.dynamics.com/'
+      BUILD_ENVIRONMENT_URL: 'https://org09ae5e87.crm.dynamics.com'                                                  '
+      PRODUCTION_ENVIRONMENT_URL: 'https://org60cad973.crm.dynamics.com'
       CLIENT_ID: '47de87cc-2bc3-4907-aa5f-25781d0e9df5'
       TENANT_ID: '0aca0af7-56de-4e27-82e5-ec7689525a04'    
     secrets:
