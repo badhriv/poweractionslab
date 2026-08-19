@@ -26,9 +26,9 @@ on:
 env:
 #edit your values here
   ENVIRONMENT_URL: 'https://org09ae5e87.crm.dynamics.com'
-  USERNAME: 'admin@CRM427270.onmicrosoft.com'
   CLIENT_ID: '47de87cc-2bc3-4907-aa5f-25781d0e9df5'
   TENANT_ID: '0aca0af7-56de-4e27-82e5-ec7689525a04'
+  PowerPlatformSPN: '
 permissions:
   contents: write
 jobs:
