@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{f59cb9af-46f1-4c65-aa2f-516ed5f4f8fa}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="github_holidayname" select="1" icon="1" preview="1">
+        <row name="result" id="github_holidayid">
+          <cell name="github_holidayname" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="github_holiday">
+          <attribute name="github_holidayid" />
+          <attribute name="github_holidayname" />
+          <attribute name="createdon" />
+          <order attribute="github_holidayname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="github_holidayname" operator="like" value="{0}" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Holidaies" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
