@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{913ea78f-d91b-42fa-9b05-2b0f34d013c9}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="github_holidayname" select="1" icon="1" preview="1">
+        <row name="result" id="github_holidayid">
+          <cell name="github_holidayname" width="300" />
+          <cell name="github_date" width="150" />
+          <cell name="github_federalholiday" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="github_holiday">
+          <attribute name="github_holidayid" />
+          <attribute name="github_holidayname" />
+          <attribute name="createdon" />
+          <order attribute="github_holidayname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="github_date" />
+          <attribute name="github_federalholiday" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Holidaies" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{c8b7fa9c-978b-49d5-b0ef-523a2e6db725}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{2db08ab2-234e-43de-8034-5a0a8492e49b}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{87bd2cb5-0521-401f-beea-57ae7961afee}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1f8c9c59-44f3-416b-b607-16bc58b94df4}">
+                        <labels>
+                          <label description="Holiday Name" languagecode="1033" />
+                        </labels>
+                        <control id="github_holidayname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="github_holidayname" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{627d8af5-9e2b-4350-b487-6e8b788d803e}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5bead236-19d9-469a-9527-c8a36054091e}">
+                        <labels>
+                          <label description="Date" languagecode="1033" />
+                        </labels>
+                        <control id="github_date" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="github_date" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b42742e3-01d8-4387-a428-da3b914cc637}">
+                        <labels>
+                          <label description="Federal Holiday" languagecode="1033" />
+                        </labels>
+                        <control id="github_federalholiday" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="github_federalholiday" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>
